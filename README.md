@@ -31,6 +31,8 @@ APIのurl: `ルートURL/api/quize/result`
 method: Post
 フロントから受け取るパラメータ:
 - self_id(ユーザのid): string
+- quize_id(クイズのid): string
+- answer(クイズへの回答): string //DBへの変更 conductテーブルにanswerカラム追加 
 - result(クイズ結果): boolean
 
 ### ポイント交換画面
