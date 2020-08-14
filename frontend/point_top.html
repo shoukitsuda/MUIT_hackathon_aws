@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Optional -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <title>ポイント交換TOP画面</title>
+    </head>
+    <body>
+      <div id="point-top">
+        <div class="container">
+          <div class="row point_display">
+            <p class="col-5" style="margin-left: 100px">保有ポイント</p> 
+            <div class="col-4 own_point"></div>
+          </div>
+        </div>
+        <!-- 絶対for文とかでかける...表示が3段3段ならjavascript側で並べるだけだけど2段3段の場合良い書き方が思いつかなかった -->
+        <div class="container items" style="margin-top: 20px">
+          <div class="row ticket">
+            <div class="col-6 item1">
+              <div class="col">
+                <div class="item1_name"></div>
+                <div class="item1_value"></div>
+              </div>
+              <button class="btn btn-primary">
+                <a href="point_details1.html"><img src="img/single_ticket.png"></a></button>
+            </div>
+            <div class="col-6 item2">
+              <div class="item2_name text-danger"></div>
+              <div class="item2_value text-danger"></div>
+              <button class="btn btn-primary">
+                <a href="point_details2.html"><img src="img/double_ticket.png"></a></button>
+            </div>
+          </div>
+  
+          <div class="row food" style="margin-top: 50px">
+            <div class="col-4 item3">
+              <div class="item3_name"></div>
+              <div class="item3_value"></div>
+              <button class="btn btn-primary">
+                <a href="point_details3.html"><img src="img/popcorn.png"></a></button>
+            </div>
+            <div class="col-4 item4">
+              <div class="item4_name"></div>
+              <div class="item4_value"></div>
+              <button class="btn btn-primary">
+                <a href="point_details4.html"><img src="img/churro.png"></a></button>
+            </div>
+            <div class="col-4 item5">
+              <div class="item5_name"></div>
+              <div class="item5_value"></div>
+              <button class="btn btn-primary">
+                <a href="point_details5.html"><img src="img/drink.png"></a></button>
+            </div>
+          </div>
+          <button class="btn btn-secondary w-b">
+            <a href="index.html">TOPへ</a>
+          </button>
+        </div>
+      </div>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+  <script src="point_top.js"></script>
+
+  </body>
+</html>

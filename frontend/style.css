@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html, body, #main {
+  height: 100%;
+}
+
+.container {
+  margin: 0 5%;
+}
+
+.container-default {
+  width: 90%;
+  height: 40%;
+  margin: 0 auto 200px auto;
+  background-color: #ff9;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.container-default > .intro {
+  text-align: center;
+}
+
+.container-default > .intro > p {
+  font-size: 2.2em;
+}
+
+.container-default > .intro > p:first-child {
+  text-align: left;
+  margin: 40px;
+}
+
+.container-default > .intro > p:last-child {
+  font-size: 4em;
+}
+
+.container-default > .balance {
+  font-size: 3em;
+}
+
+.hello {
+  font-size: 2.2em;
+  margin: 40px auto;
+}
+
+.buttons {
+  width: 90%;
+  height: 50%;
+  margin: 0 auto 100px auto;
+}
+
+.buttons > .rowing {
+  height: 100%;
+}
+
+.buttons > .rowing > .six {
+  height: 400px;
+  width: 400px;
+  padding: 0;
+}
+
+.buttons > .rowing > .six > .contents {
+  width: 80%;
+  height: 80%;
+}
+
+.buttons > .rowing > .six > .contents > a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttons > .rowing > .six > .contents:first-child {
+  margin-right: 10%;
+}
+
+.buttons > .rowing > .six > .contents:last-child {
+  margin-left: 10%;
+}
+
+#main {
+  position: relative;
+}
+
+#main > .welcome {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  height: 40rem;
+  text-align: center;
+}
+
+#main > .welcome > h1 {
+  font-size: 8em;
+  margin: 100px auto;
+}
+
+.w-b {
+  width: 360px;
+  height: 60px;
+}
+
+.w-b > a {
+  color: white;
+  font-size: 2.2em;
+}
+
+.w-b > a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+#main {
+  position: relative;
+}
+
+#main > #login {
+  width: 80%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  height: 40rem;
+  text-align: center;
+}
+
+#main > #login > h1 {
+  font-size: 3.2em;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+input {
+  width: 320px;
+  display: block;
+}
+
+.disc-login {
+  text-align: right;
+  font-size: 1.4em;
+}
+
+.initial-set {
+  margin: 50px auto 70px auto;
+}
+
+.profile-cont {
+  height: 100%;
+}
+
+#account {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.ui-profile {
+  margin: 0 5% 100px 5%;
+}
+
+.ui-profile > p {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.p-b {
+  width: 100%;
+  height: 12%;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#n {
+  margin-right: 10px;
+}
+
+#y {
+  margin-left: 10px;
+}
+
+#point-top {
+  width: 90%;
+  position: absolute;
+  margin-top: 50px;
+  height: 40rem;
+  font-size: 24px;
+}
+
+#point-top .point_display {
+  padding-left: 10%;
+  padding-right: 25%;
+  font-size: 40px;
+}
+
+.point_display {
+  height: 70px;
+}
+
+.own_point {
+  text-align: center;
+  vertical-align: middle;
+  border-color: red;
+  border-width: 2px;
+  border-radius: 20px;
+  background-color: pink;
+  height: 65px;
+}
+
+/* ポイント交換TOP画面 */
+#point-top button {
+  height: 200px;
+}
+
+#point-top .ticket button {
+  width: 370px;
+}
+
+#point-top .food button {
+  width: 300px;
+}
+
+#point-top .ticket {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#point-top img {
+  height: 200px;
+  width: 250px;
+}
+
+#point-top .food {
+  text-align: center;
+}
+
+#point-top .btn-secondary {
+  margin-top: 40px;
+  margin-left: 24px;
+  font-size: 12px;
+  height: 60px;
+  width: 160px;
+}
+
+/* 商品詳細画面 */
+#item-detail {
+  margin: 100px auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+#item-detail img {
+  width: 600px;
+  height: 400px;
+}
+
+#item-detail .btn-primary {
+  font-size: 35px;
+  width: 250px;
+}
+
+#point-detail .btn-secondary {
+  font-size: 12px;
+  width: 120px;
+  margin-left: 150px;
+}
+
+/* 購入確認画面 */
+#point-confirm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+#point-confirm h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+#point-confirm .row {
+  margin-top: 150px;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+#point-confirm button {
+  margin-top: 180px;
+  font-size: 35px;
+  width: 350px;
+}
+
+/* ご購入ありがとうございましたの画面 */
+#point-thank {
+  text-align: center;
+  font-weight: bold;
+}
+
+#point-thank > .thanks {
+  /* width: 80%; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 90%;
+  height: 40rem;
+  text-align: center;
+}
+
+#point-thank > .thanks > h1 {
+  font-size: 8em;
+  margin: 80px auto;
+}
+
+#point-thank button {
+  margin: 80px auto;
+  font-size: 30px;
+  border-radius: 20px;
+  height: 130px;
+}
+
+/* -----quiz関連----- */
+.quiz {
+  margin-top: 40px;
+}
+
+.quizTitle {
+  margin-bottom: 40px;
+}
+
+.choices {
+  margin-bottom: 20px;
+}
+
+/* 〇と×の表示 */
+.quizCorrect:after {
+  content: '〇';
+  color: #d80000;
+  display: block;
+  font-size: 5em;
+}
+
+.quizIncorrect:after {
+  content: '×';
+  color: #0066ff;
+  display: block;
+  font-size: 5em;
+}
+
+/* ボタン */
+.quizButton a {
+  color: white;
+}
+
+.quizButton a:hover {
+  text-decoration: none;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
