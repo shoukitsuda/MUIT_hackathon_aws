@@ -17,7 +17,11 @@ exports.handler = async (event,context) => {
         name: mySelf.name,
         point: mySelf.point,
     };
-    context.done(null,object);
+    const returnValues = {
+        status: 200,
+        body: object
+    }
+    context.done(null,returnValues);
 };
 
 async function getUser(user_id) {

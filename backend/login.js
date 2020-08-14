@@ -32,7 +32,12 @@ exports.handler = async (event,context) => {
         partner_name: hasSuccess ? partner.name : null
     }
 
-    context.done(null,obj)
+    const returnValues = {
+        status: 200,
+        body: obj
+    }
+
+    context.done(null,returnValues)
 };
 
 async function getUser(user_id) {

@@ -40,7 +40,11 @@ exports.handler = async (event, context) => {
     const returnObj = {
       'point': plus_point
     };
-    context.done(null, returnObj);
+    const returnValues = {
+        status: 200,
+        body: returnObj
+    }
+    context.done(null, returnValues);
 };
 
 
@@ -73,16 +77,6 @@ async function getUser(user_id) {
     var params = {
         TableName: user_table,
         Key: {'id': user_id}
-    };
-
-    const data = await getData(params);
-    return data.Item;
-}
-
-async function getConduct(conduct_id) {
-    var params = {
-        TableName: conduct_table,
-        Key: {'id': conduct_id}
     };
 
     const data = await getData(params);
@@ -133,24 +127,4 @@ async function updatePoint(self_id, point) {
 
 async function updateData(params) {
     return docClient.update(params).promise();
-}
-
-async function putData(object) {
-    var params = {
-        TableName: user_table,
-        Item: object
-    };
-    const data = await docClient.put(params).promise();
-    console.log(data)
-}
-
-function random_id() {
-    var c = "abcdefghijklmnopqrstuvwxyz0123456789";
-    var cl = c.length;
-    var r = "";
-    for(var i=0; i<10; i++){
-      r += c[Math.floor(Math.random()*cl)];
-    }
-    console.log(r)
-    return r
 }

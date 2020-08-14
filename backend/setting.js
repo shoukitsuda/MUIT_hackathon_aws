@@ -63,8 +63,12 @@ exports.handler = async (event, context) => {
       'partner_name': partner_name,
       'point': point
     };
+    const returnValues = {
+        status: 200,
+        body: returnObj
+    }
 
-    context.done(null, returnObj);
+    context.done(null, returnValues);
 };
 
 
